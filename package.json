@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.3.3"
+  },
+  "name": "book-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node db/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saul-RobotPenguin/Book-Database.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saul-RobotPenguin/Book-Database/issues"
+  },
+  "homepage": "https://github.com/Saul-RobotPenguin/Book-Database#readme",
+  "description": ""
+}
